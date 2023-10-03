@@ -71,11 +71,11 @@ class Polynomial{
 	//Adds targetPoly to the calling object polynomial linearly
 		//Convert the Polynomial objects into more serviceable form
 		double[] poly1 = new double[maxExp(this.exponents)];
-		for (int i = 0; i < this.exponents.length; i++){
+		for (int i = 0; i < poly1.length; i++){
 			poly1[this.exponents[i]] = this.coefficients[i];
 		}
 		double[] poly2 = new double[maxExp(targetPoly.exponents)];
-		for (int i = 0; i < targetPoly.exponents.length; i++){
+		for (int i = 0; i < poly2.length; i++){
 			poly2[targetPoly.exponents[i]] = targetPoly.coefficients[i];
 		}
 		int length1 = Math.min(poly1.length, poly2.length);
