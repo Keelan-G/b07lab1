@@ -49,7 +49,7 @@ class Polynomial{
 	//Retrieves the maximum number from the integer array exp
 		int max = exp[0];
 		for (int i = 1; i < exp.length; i++){
-			if (exp[i] < max){
+			if (exp[i] > max){
 				max = exp[i];
 			}
 		}
